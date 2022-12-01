@@ -3,6 +3,7 @@ extends KinematicBody2D
 #change to change speed
 var speed = 6
 var fastSpeed = 9
+var defaultSpeed = 6
 var dead = false
 var health = 100
 
@@ -27,7 +28,7 @@ func _process(delta):
 	if Input.is_action_pressed("fast"):
 		speed = fastSpeed
 	if !Input.is_action_pressed("fast"):
-		speed = 6
+		speed = defaultSpeed
 	if dead == true:
 		#put death code here instead of pass
 		pass
