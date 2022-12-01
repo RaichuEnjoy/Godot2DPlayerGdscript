@@ -29,7 +29,7 @@ func _process(delta):
 	if !Input.is_action_pressed("fast"):
 		speed = 6
 	if dead == true:
-		#put death code here
+		#put death code here instead of pass
 		pass
 		
 
